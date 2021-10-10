@@ -1,5 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace PlayCatelogServiceApp.Controllers
 {
@@ -7,5 +10,18 @@ namespace PlayCatelogServiceApp.Controllers
     [ApiController]
     public class ItemsController : ControllerBase
     {
+        private static readonly List<ItemDto> items = new List<ItemDto>()
+        {
+            new ItemDto(Guid.NewGuid(),"Pen","Red Color Pen",10,DateTimeOffset.UtcNow),
+            new ItemDto(Guid.NewGuid(),"Book","Sample books",300,DateTimeOffset.UtcNow),
+            new ItemDto(Guid.NewGuid(),"Showes","small showes",560,DateTimeOffset.UtcNow),
+            new ItemDto(Guid.NewGuid(),"Keyboard","Mini Keyboard",550,DateTimeOffset.UtcNow),
+        };
+
+        [HttpGet]
+        public IEnumerable<ItemDto> Get()
+        {
+            return items;
+        }
     }
 }
