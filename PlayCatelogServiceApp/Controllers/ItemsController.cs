@@ -23,5 +23,12 @@ namespace PlayCatelogServiceApp.Controllers
         {
             return items;
         }
+
+        [HttpGet("{id}")]
+        public ItemDto GetItemById(Guid id)
+        {
+            var item = items.Where(x => x.Id == id).SingleOrDefault();
+            return item;
+        }
     }
 }
