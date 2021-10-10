@@ -30,5 +30,15 @@ namespace PlayCatelogServiceApp.Controllers
             var item = items.Where(x => x.Id == id).SingleOrDefault();
             return item;
         }
+
+
+        [HttpPost]
+        public ActionResult<ItemDto> Post(CreateItemDto createItemDto)
+        {
+            var item = new ItemDto(Guid.NewGuid(), createItemDto.Name, createItemDto.Description, createItemDto.Price, DateTimeOffset.UtcNow);
+            items.Add(item);
+            return CreatedAtAction(nameof(GetItemById), new { id = item.Id }, item);
+        }
+
     }
 }
