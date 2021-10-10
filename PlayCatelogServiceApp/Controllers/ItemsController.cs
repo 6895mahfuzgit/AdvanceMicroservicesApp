@@ -54,9 +54,16 @@ namespace PlayCatelogServiceApp.Controllers
 
             var index = items.FindIndex(x => x.Id == id);
             items[index] = updateItem;
-
-
             return CreatedAtAction(nameof(GetItemById), new { id = item.Id }, item);
+        }
+
+
+        [HttpDelete("{id}")]
+        public IActionResult Delete(Guid id)
+        {
+            var index = items.FindIndex(x => x.Id == id);
+            items.RemoveAt(index);
+            return NoContent();
         }
 
 
