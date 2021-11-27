@@ -25,9 +25,14 @@ namespace PlayCatelogServiceApp.Controllers
         }
 
         [HttpGet("{id}")]
-        public ItemDto GetItemById(Guid id)
+        public ActionResult<ItemDto> GetItemById(Guid id)
         {
             var item = items.Where(x => x.Id == id).SingleOrDefault();
+
+            if (item == null)
+            {
+                return NotFound();
+            }
             return item;
         }
 
