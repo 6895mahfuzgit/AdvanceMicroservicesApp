@@ -49,6 +49,11 @@ namespace PlayCatelogServiceApp.Controllers
         public ActionResult<ItemDto> Put(Guid id, UpdateItemDto updateItemDto)
         {
             var item = items.Where(x => x.Id == id).SingleOrDefault();
+            
+            if (item == null)
+            {
+                return NotFound();
+            }
 
             var updateItem = item with
             {
