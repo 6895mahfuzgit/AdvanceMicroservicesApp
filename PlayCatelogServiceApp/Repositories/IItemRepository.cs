@@ -14,7 +14,7 @@ namespace PlayCatelogServiceApp.Repositories
 
         public ItemRepository()
         {
-            var mongoClient = new MongoClient("mongo://localhost:27017");
+            var mongoClient = new MongoClient("mongodb://localhost:27017");
             var database = mongoClient.GetDatabase("Catalog");
             _dbCollection = database.GetCollection<Item>(collectionName);
         }
