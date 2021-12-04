@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using PlayCatelogServiceApp.Entities;
 using PlayCatelogServiceApp.Helpers;
 using PlayCatelogServiceApp.Repositories;
 using System;
@@ -14,9 +15,9 @@ namespace PlayCatelogServiceApp.Controllers
     public class ItemsController : ControllerBase
     {
 
-        private readonly IItemRepository _itemRepository;
+        private readonly IRepository<Item> _itemRepository;
 
-        public ItemsController(IItemRepository itemRepository)
+        public ItemsController(IRepository<Item> itemRepository)
         {
             _itemRepository = itemRepository;
         }
