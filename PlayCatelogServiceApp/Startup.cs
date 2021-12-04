@@ -13,11 +13,16 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using PlayCatelogServiceApp.Settings;
+using MongoDB.Driver;
+using PlayCatelogServiceApp.Repositories;
 
 namespace PlayCatelogServiceApp
 {
     public class Startup
     {
+        private ServiceSettings _serviceSettings;
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -30,6 +35,20 @@ namespace PlayCatelogServiceApp
         {
             BsonSerializer.RegisterSerializer(new GuidSerializer(BsonType.String));
             BsonSerializer.RegisterSerializer(new DateTimeOffsetSerializer(BsonType.String));
+
+
+            _serviceSettings = Configuration.GetSection(nameof(ServiceSettings)).Get<ServiceSettings>();
+
+            services.AddSingleton(serviceProvider =>
+            {
+                var mongoSettings = Configuration.GetSection(nameof(MongoDBSettings)).Get<MongoDBSettings>();
+                var mongoClient = new MongoClient(mongoSettings.ConnectionString);
+                return mongoClient.GetDatabase(_serviceSettings.ServiceName);
+            });
+
+
+            services.AddSingleton<IItemRepository, ItemRepository>();
+
 
             services.AddControllers(options =>
             {
