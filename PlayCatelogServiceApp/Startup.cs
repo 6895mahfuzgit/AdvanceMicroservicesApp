@@ -16,6 +16,7 @@ using System.Threading.Tasks;
 using PlayCatelogServiceApp.Settings;
 using MongoDB.Driver;
 using PlayCatelogServiceApp.Repositories;
+using PlayCatelogServiceApp.Entities;
 
 namespace PlayCatelogServiceApp
 {
@@ -47,7 +48,12 @@ namespace PlayCatelogServiceApp
             });
 
 
-            services.AddSingleton<IItemRepository, ItemRepository>();
+            services.AddSingleton<IRepository<Item>>(serviceProvider => { 
+            
+             var database=serviceProvider.GetRequiredService<IMongoDatabase>();
+
+                return new MongoRepository<Item>(database, "items"); 
+            });
 
 
             services.AddControllers(options =>
