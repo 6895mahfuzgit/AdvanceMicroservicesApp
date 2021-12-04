@@ -14,7 +14,12 @@ namespace PlayCatelogServiceApp.Controllers
     public class ItemsController : ControllerBase
     {
 
-        private readonly ItemRepository _itemRepository = new();
+        private readonly IItemRepository _itemRepository;
+
+        public ItemsController(IItemRepository itemRepository)
+        {
+            _itemRepository = itemRepository;
+        }
 
         private static readonly List<ItemDto> items = new List<ItemDto>()
         {
@@ -23,6 +28,8 @@ namespace PlayCatelogServiceApp.Controllers
             new ItemDto(Guid.NewGuid(),"Showes","small showes",560,DateTimeOffset.UtcNow),
             new ItemDto(Guid.NewGuid(),"Keyboard","Mini Keyboard",550,DateTimeOffset.UtcNow),
         };
+
+       
 
         [HttpGet]
         public async Task<IEnumerable<ItemDto>> Get()
