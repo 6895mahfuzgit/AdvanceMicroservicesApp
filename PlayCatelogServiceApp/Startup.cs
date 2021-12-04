@@ -17,6 +17,7 @@ using PlayCatelogServiceApp.Settings;
 using MongoDB.Driver;
 using PlayCatelogServiceApp.Repositories;
 using PlayCatelogServiceApp.Entities;
+using PlayCatelogServiceApp.Helpers;
 
 namespace PlayCatelogServiceApp
 {
@@ -34,26 +35,9 @@ namespace PlayCatelogServiceApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            BsonSerializer.RegisterSerializer(new GuidSerializer(BsonType.String));
-            BsonSerializer.RegisterSerializer(new DateTimeOffsetSerializer(BsonType.String));
 
-
-            _serviceSettings = Configuration.GetSection(nameof(ServiceSettings)).Get<ServiceSettings>();
-
-            services.AddSingleton(serviceProvider =>
-            {
-                var mongoSettings = Configuration.GetSection(nameof(MongoDBSettings)).Get<MongoDBSettings>();
-                var mongoClient = new MongoClient(mongoSettings.ConnectionString);
-                return mongoClient.GetDatabase(_serviceSettings.ServiceName);
-            });
-
-
-            services.AddSingleton<IRepository<Item>>(serviceProvider => { 
-            
-             var database=serviceProvider.GetRequiredService<IMongoDatabase>();
-
-                return new MongoRepository<Item>(database, "items"); 
-            });
+             services.AddMongo()
+                     .AddMongoCollection<Item>("items");
 
 
             services.AddControllers(options =>
