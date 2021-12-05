@@ -1,1 +1,3 @@
 ﻿dotnet nuget add source [Package Path] -n PlayEconomy
+
+dotnet add package [Project_Name]
