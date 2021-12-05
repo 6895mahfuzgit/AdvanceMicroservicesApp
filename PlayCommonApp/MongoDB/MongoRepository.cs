@@ -2,6 +2,7 @@
 using PlayCommonApp.Entities;
 using System;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
 
 namespace PlayCommonApp.Repositories
@@ -17,7 +18,6 @@ namespace PlayCommonApp.Repositories
             _dbCollection = database.GetCollection<T>(collectionName);
         }
 
-
         public async Task<IReadOnlyCollection<T>> GetAllSync()
         {
             try
@@ -31,12 +31,38 @@ namespace PlayCommonApp.Repositories
             }
         }
 
+        public async Task<IReadOnlyCollection<T>> GetAllSync(Expression<Func<T, bool>> filter)
+        {
+            try
+            {
+                return await _dbCollection.Find(filter).ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                throw;
+            }
+        }
+
         public async Task<T> GetSync(Guid id)
         {
             try
             {
                 var filter = _filterDefinitionBuilder.Eq(entity => entity.Id, id);
                 return await _dbCollection.Find(filter).SingleOrDefaultAsync();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                throw;
+            }
+        }
+
+        public async Task<T> GetSync(Expression<Func<T, bool>> filter)
+        {
+            try
+            {
+                return await _dbCollection.Find(filter).FirstOrDefaultAsync();
             }
             catch (Exception ex)
             {
@@ -99,6 +125,9 @@ namespace PlayCommonApp.Repositories
                 throw;
             }
         }
+
+
+
 
     }
 }
