@@ -1,23 +1,12 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using MongoDB.Bson;
-using MongoDB.Bson.Serialization;
-using MongoDB.Bson.Serialization.Serializers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using PlayCatelogServiceApp.Settings;
-using MongoDB.Driver;
-using PlayCatelogServiceApp.Repositories;
 using PlayCatelogServiceApp.Entities;
-using PlayCatelogServiceApp.Helpers;
+using PlayCommonApp.Helpers;
+using PlayCommonApp.Settings;
 
 namespace PlayCatelogServiceApp
 {
