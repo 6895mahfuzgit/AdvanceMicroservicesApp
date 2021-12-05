@@ -1,8 +1,7 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using PlayCatelogServiceApp.Entities;
 using PlayCatelogServiceApp.Helpers;
-using PlayCatelogServiceApp.Repositories;
+using PlayCommonApp.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,7 +29,7 @@ namespace PlayCatelogServiceApp.Controllers
             new ItemDto(Guid.NewGuid(),"Keyboard","Mini Keyboard",550,DateTimeOffset.UtcNow),
         };
 
-       
+
 
         [HttpGet]
         public async Task<IEnumerable<ItemDto>> Get()
