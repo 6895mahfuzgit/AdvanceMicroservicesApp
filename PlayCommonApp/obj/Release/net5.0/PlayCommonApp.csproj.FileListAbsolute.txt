@@ -1,0 +1,12 @@
+C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\PlayCommonApp\bin\Release\net5.0\PlayCommonApp.deps.json
+C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\PlayCommonApp\bin\Release\net5.0\PlayCommonApp.dll
+C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\PlayCommonApp\bin\Release\net5.0\ref\PlayCommonApp.dll
+C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\PlayCommonApp\bin\Release\net5.0\PlayCommonApp.pdb
+C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\PlayCommonApp\obj\Release\net5.0\PlayCommonApp.csproj.AssemblyReference.cache
+C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\PlayCommonApp\obj\Release\net5.0\PlayCommonApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\PlayCommonApp\obj\Release\net5.0\PlayCommonApp.AssemblyInfoInputs.cache
+C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\PlayCommonApp\obj\Release\net5.0\PlayCommonApp.AssemblyInfo.cs
+C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\PlayCommonApp\obj\Release\net5.0\PlayCommonApp.csproj.CoreCompileInputs.cache
+C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\PlayCommonApp\obj\Release\net5.0\PlayCommonApp.dll
+C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\PlayCommonApp\obj\Release\net5.0\ref\PlayCommonApp.dll
+C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\PlayCommonApp\obj\Release\net5.0\PlayCommonApp.pdb
