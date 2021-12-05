@@ -1,0 +1,1 @@
+﻿dotnet nuget add source [Package Path] -n PlayEconomy
