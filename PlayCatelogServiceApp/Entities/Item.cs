@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PlayCommonApp.Entities;
+using System;
 
 namespace PlayCatelogServiceApp.Entities
 {
