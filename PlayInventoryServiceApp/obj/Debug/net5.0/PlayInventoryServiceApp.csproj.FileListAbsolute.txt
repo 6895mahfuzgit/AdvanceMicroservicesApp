@@ -26,3 +26,14 @@ C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\PlayInventoryServiceApp\obj
 C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\PlayInventoryServiceApp\obj\Debug\net5.0\ref\PlayInventoryServiceApp.dll
 C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\PlayInventoryServiceApp\obj\Debug\net5.0\PlayInventoryServiceApp.pdb
 C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\PlayInventoryServiceApp\obj\Debug\net5.0\PlayInventoryServiceApp.genruntimeconfig.cache
+C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\PlayInventoryServiceApp\bin\Debug\net5.0\DnsClient.dll
+C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\PlayInventoryServiceApp\bin\Debug\net5.0\MongoDB.Bson.dll
+C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\PlayInventoryServiceApp\bin\Debug\net5.0\MongoDB.Driver.dll
+C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\PlayInventoryServiceApp\bin\Debug\net5.0\MongoDB.Driver.Core.dll
+C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\PlayInventoryServiceApp\bin\Debug\net5.0\MongoDB.Libmongocrypt.dll
+C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\PlayInventoryServiceApp\bin\Debug\net5.0\SharpCompress.dll
+C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\PlayInventoryServiceApp\bin\Debug\net5.0\runtimes\win\native\libzstd.dll
+C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\PlayInventoryServiceApp\bin\Debug\net5.0\runtimes\win\native\snappy32.dll
+C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\PlayInventoryServiceApp\bin\Debug\net5.0\runtimes\win\native\snappy64.dll
+C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\PlayInventoryServiceApp\bin\Debug\net5.0\PlayCommonApp.dll
+C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\PlayInventoryServiceApp\bin\Debug\net5.0\PlayCommonApp.pdb
