@@ -5005,6 +5005,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Users\\mahfu\\Desktop\\Codes\\AdvanceMicroservicesApp\\PlayCommonApp\\bin\\Release\\net5.0\\publish": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

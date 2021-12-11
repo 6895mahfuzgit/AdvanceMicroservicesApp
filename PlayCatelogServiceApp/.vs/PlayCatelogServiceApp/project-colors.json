@@ -5,7 +5,22 @@
       "ProjectGuid": "9457bb04-553c-47b3-af85-31faa9317662",
       "DisplayName": "PlayCatelogServiceApp",
       "ColorIndex": 0
+    },
+    "02539f4d-f098-4c1d-821d-021f56b72053": {
+      "ProjectGuid": "02539f4d-f098-4c1d-821d-021f56b72053",
+      "DisplayName": "PlayCommonApp",
+      "ColorIndex": 1
+    },
+    "cd143ee1-a5f5-4a47-8e54-5a748aef1f3b": {
+      "ProjectGuid": "cd143ee1-a5f5-4a47-8e54-5a748aef1f3b",
+      "DisplayName": "PlayInfra",
+      "ColorIndex": 2
+    },
+    "ac2f65f1-6cb5-4fd7-ba83-a58c982d6815": {
+      "ProjectGuid": "ac2f65f1-6cb5-4fd7-ba83-a58c982d6815",
+      "DisplayName": "DockerFiles",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 4
 }
