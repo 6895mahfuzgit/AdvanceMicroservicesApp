@@ -20,7 +20,12 @@
       "ProjectGuid": "ac2f65f1-6cb5-4fd7-ba83-a58c982d6815",
       "DisplayName": "DockerFiles",
       "ColorIndex": 3
+    },
+    "47846065-f7bb-4811-b132-f8a8d574a076": {
+      "ProjectGuid": "47846065-f7bb-4811-b132-f8a8d574a076",
+      "DisplayName": "PlayInventoryServiceApp",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 5
 }

@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "i+nvdgUbQVs7KT2JeqLGcorTK/ulC0Dg+X0YxZxC3U2tFZBGzQIRObBPtZwfIy230vqZiDLHUJMBkonVVvlyyw==",
+  "dgSpecHash": "ONtXjdoe92bed+bWYdS2ovhL3YPqMlvova3vd2N2pMzRbiBc0vVg++CaKMky62CgAOCNppQhuXSJe8dthgfmWA==",
   "success": true,
   "projectFilePath": "C:\\Users\\mahfu\\Desktop\\Codes\\AdvanceMicroservicesApp\\PlayInventoryServiceApp\\PlayInventoryServiceApp.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\mahfu\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\mahfu\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\mahfu\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\mahfu\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\mahfu\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\mahfu\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
   "logs": []
 }

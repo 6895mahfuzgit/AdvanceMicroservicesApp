@@ -1,9 +1,8 @@
-﻿using PlayCommonApp.Entities;
-using System;
+﻿using System;
 
 namespace PlayInventoryServiceApp.Models
 {
-    public class InventoryItem : IEntity
+    public class InventoryItem
     {
         public Guid Id { get; set; }
         public Guid UserId { get; set; }

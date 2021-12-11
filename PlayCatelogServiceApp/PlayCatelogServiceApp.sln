@@ -12,7 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DockerFiles", "DockerFiles"
 		docker-compose.yml = docker-compose.yml
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayInventoryServiceApp", "..\PlayInventoryServiceApp\PlayInventoryServiceApp.csproj", "{47846065-F7BB-4811-B132-F8A8D574A076}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayInventoryServiceApp", "..\PlayInventoryServiceApp\PlayInventoryServiceApp.csproj", "{4CE50E19-B006-4B7C-AB73-589D925F6819}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,10 +28,10 @@ Global
 		{02539F4D-F098-4C1D-821D-021F56B72053}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02539F4D-F098-4C1D-821D-021F56B72053}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02539F4D-F098-4C1D-821D-021F56B72053}.Release|Any CPU.Build.0 = Release|Any CPU
-		{47846065-F7BB-4811-B132-F8A8D574A076}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{47846065-F7BB-4811-B132-F8A8D574A076}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{47846065-F7BB-4811-B132-F8A8D574A076}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{47846065-F7BB-4811-B132-F8A8D574A076}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CE50E19-B006-4B7C-AB73-589D925F6819}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CE50E19-B006-4B7C-AB73-589D925F6819}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CE50E19-B006-4B7C-AB73-589D925F6819}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CE50E19-B006-4B7C-AB73-589D925F6819}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
