@@ -1,7 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using PlayCommonApp.Repositories;
+using PlayInventoryServiceApp.Helpers;
+using PlayInventoryServiceApp.Models;
+using System;
+using System.Collections;
 using System.Collections.Generic;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace PlayInventoryServiceApp.Controllers
 {
@@ -9,36 +14,54 @@ namespace PlayInventoryServiceApp.Controllers
     [ApiController]
     public class ItemsController : ControllerBase
     {
-        // GET: api/<ItemsController>
+        private readonly IRepository<InventoryItem> _repository;
+
+        public ItemsController(IRepository<InventoryItem> repository)
+        {
+            _repository = repository;
+        }
+
         [HttpGet]
-        public IEnumerable<string> Get()
+        public async Task<ActionResult<IEnumerable<GrandItemDto>>> GetAsync(Guid userId)
         {
-            return new string[] { "value1", "value2" };
+            try
+            {
+                if (userId == Guid.Empty)
+                {
+                    return BadRequest();
+                }
+
+                var items = (await _repository.GetAllSync(item => item.UserId == userId))
+                               .Select(item => item.AsDto());
+
+                return Ok(items);
+
+            }
+            catch (System.Exception)
+            {
+                throw;
+            }
         }
 
-        // GET api/<ItemsController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
 
-        // POST api/<ItemsController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<ActionResult> PostAsync(GrandItemDto grandItemDto)
         {
+            var inventoryItem = await _repository.GetSync(x => x.UserId == grandItemDto.UserId
+                                                          && x.CatagoryItemId == grandItemDto.CatagoryId);
+
+            if (inventoryItem == null)
+            {
+                await _repository.CreateSync(grandItemDto.AsModel());
+            }
+            else
+            {
+                inventoryItem.Quantity += grandItemDto.Quantity;
+                await _repository.UpdateSync(inventoryItem);
+            }
+
+            return Ok();
         }
 
-        // PUT api/<ItemsController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/<ItemsController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
     }
 }
