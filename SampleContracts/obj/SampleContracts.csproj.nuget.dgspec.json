@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mahfu\\Desktop\\Codes\\AdvanceMicroservicesApp\\SampleApiApp\\SampleApiApp.csproj": {}
+    "C:\\Users\\mahfu\\Desktop\\Codes\\AdvanceMicroservicesApp\\SampleContracts\\SampleContracts.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mahfu\\Desktop\\Codes\\AdvanceMicroservicesApp\\SampleApiApp\\SampleApiApp.csproj": {
+    "C:\\Users\\mahfu\\Desktop\\Codes\\AdvanceMicroservicesApp\\SampleContracts\\SampleContracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mahfu\\Desktop\\Codes\\AdvanceMicroservicesApp\\SampleApiApp\\SampleApiApp.csproj",
-        "projectName": "SampleApiApp",
-        "projectPath": "C:\\Users\\mahfu\\Desktop\\Codes\\AdvanceMicroservicesApp\\SampleApiApp\\SampleApiApp.csproj",
+        "projectUniqueName": "C:\\Users\\mahfu\\Desktop\\Codes\\AdvanceMicroservicesApp\\SampleContracts\\SampleContracts.csproj",
+        "projectName": "SampleContracts",
+        "projectPath": "C:\\Users\\mahfu\\Desktop\\Codes\\AdvanceMicroservicesApp\\SampleContracts\\SampleContracts.csproj",
         "packagesPath": "C:\\Users\\mahfu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mahfu\\Desktop\\Codes\\AdvanceMicroservicesApp\\SampleApiApp\\obj\\",
+        "outputPath": "C:\\Users\\mahfu\\Desktop\\Codes\\AdvanceMicroservicesApp\\SampleContracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mahfu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,16 +40,6 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "dependencies": {
-            "MassTransit.AspNetCore": {
-              "target": "Package",
-              "version": "[7.1.6, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[5.6.3, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -61,9 +51,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
