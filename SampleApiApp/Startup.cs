@@ -1,3 +1,5 @@
+using MassTransit;
+using MassTransit.Mediator;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -7,6 +9,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using SampleComponents.Consumers;
+using SampleContracts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,12 +31,26 @@ namespace SampleApiApp
         public void ConfigureServices(IServiceCollection services)
         {
 
+
+           
+
+            services.AddMediator(cfg =>
+            {
+                cfg.AddConsumer<SubmitOrderConsumer>();
+                cfg.AddRequestClient<SubmitOrder>(); 
+            });
+
+
+            
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "SampleApiApp", Version = "v1" });
             });
         }
+
+        
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

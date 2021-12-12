@@ -18,5 +18,6 @@
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMicrosoft_Extensions_ApiDescription_Server Condition=" '$(PkgMicrosoft_Extensions_ApiDescription_Server)' == '' ">C:\Users\mahfu\.nuget\packages\microsoft.extensions.apidescription.server\3.0.0</PkgMicrosoft_Extensions_ApiDescription_Server>
+    <PkgMassTransit_Analyzers Condition=" '$(PkgMassTransit_Analyzers)' == '' ">C:\Users\mahfu\.nuget\packages\masstransit.analyzers\7.1.6</PkgMassTransit_Analyzers>
   </PropertyGroup>
 </Project>

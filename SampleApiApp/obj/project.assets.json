@@ -52,6 +52,9 @@
           "lib/netstandard2.0/MassTransit.dll": {}
         }
       },
+      "MassTransit.Analyzers/7.1.6": {
+        "type": "package"
+      },
       "MassTransit.AspNetCore/7.1.6": {
         "type": "package",
         "dependencies": {
@@ -1508,6 +1511,30 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "SampleComponents/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "MassTransit": "7.1.6",
+          "SampleContracts": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SampleComponents.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SampleComponents.dll": {}
+        }
+      },
+      "SampleContracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/SampleContracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SampleContracts.dll": {}
+        }
       }
     }
   },
@@ -1550,6 +1577,22 @@
         "masstransit.7.1.6.nupkg.sha512",
         "masstransit.nuspec",
         "mt-logo-small.png"
+      ]
+    },
+    "MassTransit.Analyzers/7.1.6": {
+      "sha512": "ZlIpVlaIEro6N1HW+9hAedNqh/7iMfjLvemYVBefWbuGfqdXRZMpNi9o5r36e/NcqKZr3wZ8w+gGc0VxfEHRWA==",
+      "type": "package",
+      "path": "masstransit.analyzers/7.1.6",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "analyzers/dotnet/cs/MassTransit.Analyzers.dll",
+        "masstransit.analyzers.7.1.6.nupkg.sha512",
+        "masstransit.analyzers.nuspec",
+        "mt-logo-small.png",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
       ]
     },
     "MassTransit.AspNetCore/7.1.6": {
@@ -5356,11 +5399,23 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "SampleComponents/1.0.0": {
+      "type": "project",
+      "path": "../SampleComponents/SampleComponents.csproj",
+      "msbuildProject": "../SampleComponents/SampleComponents.csproj"
+    },
+    "SampleContracts/1.0.0": {
+      "type": "project",
+      "path": "../SampleContracts/SampleContracts.csproj",
+      "msbuildProject": "../SampleContracts/SampleContracts.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "MassTransit.Analyzers >= 7.1.6",
       "MassTransit.AspNetCore >= 7.1.6",
+      "SampleComponents >= 1.0.0",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
   },
@@ -5391,7 +5446,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\mahfu\\Desktop\\Codes\\AdvanceMicroservicesApp\\SampleComponents\\SampleComponents.csproj": {
+              "projectPath": "C:\\Users\\mahfu\\Desktop\\Codes\\AdvanceMicroservicesApp\\SampleComponents\\SampleComponents.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -5404,6 +5463,10 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "MassTransit.Analyzers": {
+            "target": "Package",
+            "version": "[7.1.6, )"
+          },
           "MassTransit.AspNetCore": {
             "target": "Package",
             "version": "[7.1.6, )"

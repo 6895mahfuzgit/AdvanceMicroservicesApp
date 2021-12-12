@@ -25,3 +25,17 @@ C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\SampleApiApp\obj\Debug\net5
 C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\SampleApiApp\obj\Debug\net5.0\ref\SampleApiApp.dll
 C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\SampleApiApp\obj\Debug\net5.0\SampleApiApp.pdb
 C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\SampleApiApp\obj\Debug\net5.0\SampleApiApp.genruntimeconfig.cache
+C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\SampleApiApp\bin\Debug\net5.0\Automatonymous.dll
+C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\SampleApiApp\bin\Debug\net5.0\GreenPipes.dll
+C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\SampleApiApp\bin\Debug\net5.0\MassTransit.dll
+C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\SampleApiApp\bin\Debug\net5.0\MassTransit.AspNetCoreIntegration.dll
+C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\SampleApiApp\bin\Debug\net5.0\MassTransit.ExtensionsDependencyInjectionIntegration.dll
+C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\SampleApiApp\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\SampleApiApp\bin\Debug\net5.0\NewId.dll
+C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\SampleApiApp\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\SampleApiApp\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\SampleApiApp\bin\Debug\net5.0\SampleComponents.dll
+C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\SampleApiApp\bin\Debug\net5.0\SampleContracts.dll
+C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\SampleApiApp\bin\Debug\net5.0\SampleComponents.pdb
+C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\SampleApiApp\bin\Debug\net5.0\SampleContracts.pdb
+C:\Users\mahfu\Desktop\Codes\AdvanceMicroservicesApp\SampleApiApp\obj\Debug\net5.0\SampleApiApp.csproj.AssemblyReference.cache

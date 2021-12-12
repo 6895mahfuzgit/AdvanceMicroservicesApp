@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "UfStB8untMmNTiu4dvB2KUP/HAdg3pgOH82HUAiBNGFt3cx6TXbPY0eP6gzdgMokYk35lGLJTt3+Wphx0XpSww==",
+  "dgSpecHash": "+W9zGeOcyxfI/JliDZZpjTWS+OMSPXcGp0SNJtkBPLARivny2Jkr0yjQvmrJSfS7FTQpcmF5DUaiZEYSTRhrJw==",
   "success": true,
   "projectFilePath": "C:\\Users\\mahfu\\Desktop\\Codes\\AdvanceMicroservicesApp\\SampleApiApp\\SampleApiApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mahfu\\.nuget\\packages\\automatonymous\\5.1.1\\automatonymous.5.1.1.nupkg.sha512",
     "C:\\Users\\mahfu\\.nuget\\packages\\greenpipes\\4.0.0\\greenpipes.4.0.0.nupkg.sha512",
     "C:\\Users\\mahfu\\.nuget\\packages\\masstransit\\7.1.6\\masstransit.7.1.6.nupkg.sha512",
+    "C:\\Users\\mahfu\\.nuget\\packages\\masstransit.analyzers\\7.1.6\\masstransit.analyzers.7.1.6.nupkg.sha512",
     "C:\\Users\\mahfu\\.nuget\\packages\\masstransit.aspnetcore\\7.1.6\\masstransit.aspnetcore.7.1.6.nupkg.sha512",
     "C:\\Users\\mahfu\\.nuget\\packages\\masstransit.extensions.dependencyinjection\\7.1.6\\masstransit.extensions.dependencyinjection.7.1.6.nupkg.sha512",
     "C:\\Users\\mahfu\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",

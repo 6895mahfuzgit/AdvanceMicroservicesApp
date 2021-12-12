@@ -8,4 +8,8 @@
     <PackageReference Include="MassTransit" Version="7.1.6" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SampleContracts\SampleContracts.csproj" />
+  </ItemGroup>
+
 </Project>

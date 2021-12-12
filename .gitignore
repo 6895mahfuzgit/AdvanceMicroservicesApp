@@ -1,3 +1,14 @@
+*/obj/*
+*/bin/*
+*/vs/*
+
+*.vs/
+*.vs/
+*/bin/*
+*/obj/*
+*/bin/*
+*/obj/*
+*/bin/Debug/*
 
 PlayCatelogServiceApp/.vs/PlayCatelogServiceApp/v17/.suo
 PlayCatelogServiceApp/.vs/PlayCatelogServiceApp/v17/.suo

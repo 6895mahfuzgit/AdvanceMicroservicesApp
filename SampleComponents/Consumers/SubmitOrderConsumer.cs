@@ -8,7 +8,12 @@ namespace SampleComponents.Consumers
     {
         public async Task Consume(ConsumeContext<SubmitOrder> context)
         {
-            await context.RespondAsync<OrderSubmissionAccepted>(new { InVar.Timestamp });
+            await context.RespondAsync<OrderSubmissionAccepted>(new
+            {
+                OrderId = context.Message.OrderId,
+                CustomerNumber = context.Message.CustomerNumber,
+                Timestamp = InVar.Timestamp
+            });
         }
     }
 }

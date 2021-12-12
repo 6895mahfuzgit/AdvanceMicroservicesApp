@@ -1313,6 +1313,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "SampleContracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/SampleContracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SampleContracts.dll": {}
+        }
       }
     }
   },
@@ -4899,11 +4909,17 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "SampleContracts/1.0.0": {
+      "type": "project",
+      "path": "../SampleContracts/SampleContracts.csproj",
+      "msbuildProject": "../SampleContracts/SampleContracts.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "MassTransit >= 7.1.6"
+      "MassTransit >= 7.1.6",
+      "SampleContracts >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4933,7 +4949,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\mahfu\\Desktop\\Codes\\AdvanceMicroservicesApp\\SampleContracts\\SampleContracts.csproj": {
+              "projectPath": "C:\\Users\\mahfu\\Desktop\\Codes\\AdvanceMicroservicesApp\\SampleContracts\\SampleContracts.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
