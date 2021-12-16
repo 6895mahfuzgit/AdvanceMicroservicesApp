@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PlayCommonApp.Repositories;
+using PlayInventoryServiceApp.Clients;
 using PlayInventoryServiceApp.Helpers;
 using PlayInventoryServiceApp.Models;
 using System;
@@ -15,10 +16,12 @@ namespace PlayInventoryServiceApp.Controllers
     public class ItemsController : ControllerBase
     {
         private readonly IRepository<InventoryItem> _repository;
+        private readonly CatalogClient _catalogClient;
 
-        public ItemsController(IRepository<InventoryItem> repository)
+        public ItemsController(IRepository<InventoryItem> repository, CatalogClient catalogClient)
         {
             _repository = repository;
+            _catalogClient = catalogClient;
         }
 
         [HttpGet]
@@ -31,11 +34,28 @@ namespace PlayInventoryServiceApp.Controllers
                     return BadRequest();
                 }
 
-                var items = (await _repository.GetAllSync(item => item.UserId == userId))
-                               .Select(item => item.AsDto());
+                //var items = (await _repository.GetAllSync(item => item.UserId == userId))
+                //               .Select(item => item.AsDto());
 
-                return Ok(items);
+                var catalogItems = await _catalogClient.GetCatalogAsync();
+                var inventoryItemEntities = await _repository.GetAllSync(item => item.UserId == userId);
 
+                var inventoryItemDtos = inventoryItemEntities.Select(inventoryItem =>
+                {
+                    var catalogItem = catalogItems.FirstOrDefault(x => x.Id == inventoryItem.CatagoryItemId);
+                    if (catalogItem != null)
+                    {
+                        return inventoryItem.AsDto(catalogItem.Name ?? "", catalogItem.Description ?? "");
+                    }
+                    else
+                    {
+                        return inventoryItem.AsDto("", "");
+
+                    }
+
+                });
+
+                return Ok(inventoryItemDtos);
             }
             catch (System.Exception)
             {
