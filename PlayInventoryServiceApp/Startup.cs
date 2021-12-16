@@ -5,7 +5,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using PlayCommonApp.Helpers;
+using PlayInventoryServiceApp.Clients;
 using PlayInventoryServiceApp.Models;
+using System;
 
 namespace PlayInventoryServiceApp
 {
@@ -24,6 +26,9 @@ namespace PlayInventoryServiceApp
             services.AddMongo()
                      .AddMongoCollection<InventoryItem>("inventoryitems");
 
+            services.AddHttpClient<CatalogClient>(client => {
+                client.BaseAddress = new Uri("http://localhost:36444");
+            });
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
@@ -42,11 +47,11 @@ namespace PlayInventoryServiceApp
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "PlayInventoryServiceApp v1"));
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             app.UseRouting();
 
-            app.UseAuthorization();
+           // app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
