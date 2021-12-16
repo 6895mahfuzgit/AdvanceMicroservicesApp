@@ -20,6 +20,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleContracts", "..\Sampl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleComponents", "..\SampleComponents\SampleComponents.csproj", "{338C85C8-3271-460B-A9A2-2680704F70EF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{55850BAE-8112-4DEF-A52C-756B301CD535}"
+	ProjectSection(SolutionItems) = preProject
+		Start From.txt = Start From.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

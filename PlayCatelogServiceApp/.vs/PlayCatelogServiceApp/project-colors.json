@@ -35,7 +35,27 @@
       "ProjectGuid": "4ce50e19-b006-4b7c-ab73-589d925f6819",
       "DisplayName": "PlayInventoryServiceApp",
       "ColorIndex": 5
+    },
+    "56cc504c-83ed-4d27-aaa6-a634273ec9bc": {
+      "ProjectGuid": "56cc504c-83ed-4d27-aaa6-a634273ec9bc",
+      "DisplayName": "SampleApiApp",
+      "ColorIndex": 6
+    },
+    "4cb3211e-3344-4933-a737-6ca7b654ed44": {
+      "ProjectGuid": "4cb3211e-3344-4933-a737-6ca7b654ed44",
+      "DisplayName": "SampleContracts",
+      "ColorIndex": 7
+    },
+    "338c85c8-3271-460b-a9a2-2680704f70ef": {
+      "ProjectGuid": "338c85c8-3271-460b-a9a2-2680704f70ef",
+      "DisplayName": "SampleComponents",
+      "ColorIndex": 8
+    },
+    "55850bae-8112-4def-a52c-756b301cd535": {
+      "ProjectGuid": "55850bae-8112-4def-a52c-756b301cd535",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 9
     }
   },
-  "NextColorIndex": 6
+  "NextColorIndex": 10
 }
