@@ -20,7 +20,7 @@ namespace PlayInventoryServiceApp.Clients
         {
             try
             {
-                var items = await _httpClient.GetFromJsonAsync<IReadOnlyCollection<CatalogItemDto>>("/items");
+                var items = await _httpClient.GetFromJsonAsync<IReadOnlyCollection<CatalogItemDto>>("/api/Items");
                 return items;
             }
             catch (Exception ex)
