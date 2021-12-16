@@ -29,10 +29,20 @@ namespace PlayCatelogServiceApp
                      .AddMongoCollection<Item>("items");
 
 
+            //services.AddCors(options =>
+            //{
+            //    options.AddPolicy("CorsApi",
+            //        builder => builder.WithOrigins("localhost:44304")
+            //            .AllowAnyHeader()
+            //            .AllowAnyMethod());
+            //});
+
             services.AddControllers(options =>
             {
                 options.SuppressAsyncSuffixInActionNames = false;
             });
+
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "PlayCatelogServiceApp", Version = "v1" });
@@ -50,8 +60,8 @@ namespace PlayCatelogServiceApp
             }
 
             app.UseRouting();
-
-            app.UseAuthorization();
+            //app.UseCors("CorsApi");
+            //app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
