@@ -32,6 +32,7 @@ namespace PlayInventoryServiceApp
             {
                 client.BaseAddress = new Uri("http://localhost:36444");
             })
+            .AddTransientHttpErrorPolicy(builder => builder.WaitAndRetryAsync(5, retryAttemp => TimeSpan.FromSeconds(Math.Pow(2, retryAttemp))))
             .AddPolicyHandler(Policy.TimeoutAsync<HttpResponseMessage>(1));
 
             services.AddControllers();
