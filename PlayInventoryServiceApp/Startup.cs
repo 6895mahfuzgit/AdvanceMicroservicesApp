@@ -8,6 +8,7 @@ using PlayCommonApp.Helpers;
 using PlayInventoryServiceApp.Clients;
 using PlayInventoryServiceApp.Models;
 using Polly;
+using Polly.Timeout;
 using System;
 using System.Net.Http;
 
@@ -32,7 +33,7 @@ namespace PlayInventoryServiceApp
             {
                 client.BaseAddress = new Uri("http://localhost:36444");
             })
-            .AddTransientHttpErrorPolicy(builder => builder.WaitAndRetryAsync(5, retryAttemp => TimeSpan.FromSeconds(Math.Pow(2, retryAttemp))))
+            .AddTransientHttpErrorPolicy(builder => builder.Or<TimeoutRejectedException>().WaitAndRetryAsync(5, retryAttemp => TimeSpan.FromSeconds(Math.Pow(2, retryAttemp))))
             .AddPolicyHandler(Policy.TimeoutAsync<HttpResponseMessage>(1));
 
             services.AddControllers();
