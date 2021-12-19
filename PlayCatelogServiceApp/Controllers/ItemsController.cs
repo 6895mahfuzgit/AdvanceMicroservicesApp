@@ -15,7 +15,7 @@ namespace PlayCatelogServiceApp.Controllers
     {
 
         private readonly IRepository<Item> _itemRepository;
-
+        private static int requestCount = 0;
         public ItemsController(IRepository<Item> itemRepository)
         {
             _itemRepository = itemRepository;
@@ -32,10 +32,25 @@ namespace PlayCatelogServiceApp.Controllers
 
 
         [HttpGet]
-        public async Task<IEnumerable<ItemDto>> Get()
+        public async Task<ActionResult<IEnumerable<ItemDto>>> Get()
         {
+            requestCount++;
+            Console.WriteLine($"Request {requestCount}: Starting");
+
+            if (requestCount <= 2)
+            {
+                Console.WriteLine($"Request {requestCount}: Delaying");
+                await Task.Delay(TimeSpan.FromSeconds(10));
+            }
+
+            if (requestCount <= 4)
+            {
+                Console.WriteLine($"Request {requestCount}: 500 (Internal Server Error)");
+                return StatusCode(500);
+            }
+
             var itemsToReturn = (await _itemRepository.GetAllSync()).Select(x => x.AsDto());
-            return itemsToReturn;
+            return Ok(itemsToReturn);
         }
 
         [HttpGet("{id}")]
