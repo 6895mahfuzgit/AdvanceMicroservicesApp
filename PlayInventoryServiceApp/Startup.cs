@@ -29,11 +29,13 @@ namespace PlayInventoryServiceApp
             services.AddMongo()
                      .AddMongoCollection<InventoryItem>("inventoryitems");
 
+            Random random = new Random();
+
             services.AddHttpClient<CatalogClient>(client =>
             {
                 client.BaseAddress = new Uri("http://localhost:36444");
             })
-            .AddTransientHttpErrorPolicy(builder => builder.Or<TimeoutRejectedException>().WaitAndRetryAsync(5, retryAttemp => TimeSpan.FromSeconds(Math.Pow(2, retryAttemp))))
+            .AddTransientHttpErrorPolicy(builder => builder.Or<TimeoutRejectedException>().WaitAndRetryAsync(5, retryAttemp => TimeSpan.FromSeconds(Math.Pow(2, retryAttemp)) + TimeSpan.FromMilliseconds(random.Next(0, 1000))))
             .AddPolicyHandler(Policy.TimeoutAsync<HttpResponseMessage>(1));
 
             services.AddControllers();
