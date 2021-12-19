@@ -7,7 +7,9 @@ using Microsoft.OpenApi.Models;
 using PlayCommonApp.Helpers;
 using PlayInventoryServiceApp.Clients;
 using PlayInventoryServiceApp.Models;
+using Polly;
 using System;
+using System.Net.Http;
 
 namespace PlayInventoryServiceApp
 {
@@ -26,9 +28,11 @@ namespace PlayInventoryServiceApp
             services.AddMongo()
                      .AddMongoCollection<InventoryItem>("inventoryitems");
 
-            services.AddHttpClient<CatalogClient>(client => {
+            services.AddHttpClient<CatalogClient>(client =>
+            {
                 client.BaseAddress = new Uri("http://localhost:36444");
-            });
+            })
+            .AddPolicyHandler(Policy.TimeoutAsync<HttpResponseMessage>(1));
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
@@ -51,7 +55,7 @@ namespace PlayInventoryServiceApp
 
             app.UseRouting();
 
-           // app.UseAuthorization();
+            // app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
