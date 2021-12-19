@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "uLtMCsfp4UQqWPxdL9yttrYty4duxMz3dSpLAr1ve+ijAEH/sCtuEICDRx0g1kVzQVpyqZ1/kHtVUk7RmeRArQ==",
+  "dgSpecHash": "LtsA+G3KFGlxDTwgTkJEozdIxfnINxnp06U0ovngyT9YfwhItAwXnYu9hvAblJmEYqujq8bUr8meZpe76xt59g==",
   "success": true,
   "projectFilePath": "C:\\Users\\mahfu\\Desktop\\Codes\\AdvanceMicroservicesApp\\PlayInventoryServiceApp\\PlayInventoryServiceApp.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,11 @@
     "C:\\Users\\mahfu\\.nuget\\packages\\microsoft.extensions.configuration.binder\\5.0.0\\microsoft.extensions.configuration.binder.5.0.0.nupkg.sha512",
     "C:\\Users\\mahfu\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.0\\microsoft.extensions.dependencyinjection.5.0.0.nupkg.sha512",
     "C:\\Users\\mahfu\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\mahfu\\.nuget\\packages\\microsoft.extensions.http\\5.0.0\\microsoft.extensions.http.5.0.0.nupkg.sha512",
+    "C:\\Users\\mahfu\\.nuget\\packages\\microsoft.extensions.http.polly\\5.0.1\\microsoft.extensions.http.polly.5.0.1.nupkg.sha512",
+    "C:\\Users\\mahfu\\.nuget\\packages\\microsoft.extensions.logging\\5.0.0\\microsoft.extensions.logging.5.0.0.nupkg.sha512",
+    "C:\\Users\\mahfu\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\mahfu\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
     "C:\\Users\\mahfu\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
     "C:\\Users\\mahfu\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",
     "C:\\Users\\mahfu\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
@@ -21,6 +26,8 @@
     "C:\\Users\\mahfu\\.nuget\\packages\\mongodb.driver.core\\2.11.5\\mongodb.driver.core.2.11.5.nupkg.sha512",
     "C:\\Users\\mahfu\\.nuget\\packages\\mongodb.libmongocrypt\\1.0.0\\mongodb.libmongocrypt.1.0.0.nupkg.sha512",
     "C:\\Users\\mahfu\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
+    "C:\\Users\\mahfu\\.nuget\\packages\\polly\\7.1.0\\polly.7.1.0.nupkg.sha512",
+    "C:\\Users\\mahfu\\.nuget\\packages\\polly.extensions.http\\3.0.0\\polly.extensions.http.3.0.0.nupkg.sha512",
     "C:\\Users\\mahfu\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\mahfu\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\mahfu\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
