@@ -14,16 +14,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DockerFiles", "DockerFiles"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayInventoryServiceApp", "..\PlayInventoryServiceApp\PlayInventoryServiceApp.csproj", "{4CE50E19-B006-4B7C-AB73-589D925F6819}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleApiApp", "..\SampleApiApp\SampleApiApp.csproj", "{56CC504C-83ED-4D27-AAA6-A634273EC9BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleApiApp", "..\SampleApiApp\SampleApiApp.csproj", "{56CC504C-83ED-4D27-AAA6-A634273EC9BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleContracts", "..\SampleContracts\SampleContracts.csproj", "{4CB3211E-3344-4933-A737-6CA7B654ED44}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleContracts", "..\SampleContracts\SampleContracts.csproj", "{4CB3211E-3344-4933-A737-6CA7B654ED44}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleComponents", "..\SampleComponents\SampleComponents.csproj", "{338C85C8-3271-460B-A9A2-2680704F70EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleComponents", "..\SampleComponents\SampleComponents.csproj", "{338C85C8-3271-460B-A9A2-2680704F70EF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{55850BAE-8112-4DEF-A52C-756B301CD535}"
 	ProjectSection(SolutionItems) = preProject
 		Start From.txt = Start From.txt
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayCategoryContractsApp", "..\PlayCategoryContractsApp\PlayCategoryContractsApp.csproj", "{2FD478E9-B620-471D-8908-DE574AA08CD5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +57,10 @@ Global
 		{338C85C8-3271-460B-A9A2-2680704F70EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{338C85C8-3271-460B-A9A2-2680704F70EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{338C85C8-3271-460B-A9A2-2680704F70EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FD478E9-B620-471D-8908-DE574AA08CD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FD478E9-B620-471D-8908-DE574AA08CD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FD478E9-B620-471D-8908-DE574AA08CD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FD478E9-B620-471D-8908-DE574AA08CD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
